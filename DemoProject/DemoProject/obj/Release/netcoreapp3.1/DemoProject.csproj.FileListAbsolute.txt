@@ -1,0 +1,12 @@
+C:\Users\claud\source\repos\DemoProject\DemoProject\bin\Release\netcoreapp3.1\DemoProject.exe
+C:\Users\claud\source\repos\DemoProject\DemoProject\bin\Release\netcoreapp3.1\DemoProject.deps.json
+C:\Users\claud\source\repos\DemoProject\DemoProject\bin\Release\netcoreapp3.1\DemoProject.runtimeconfig.json
+C:\Users\claud\source\repos\DemoProject\DemoProject\bin\Release\netcoreapp3.1\DemoProject.runtimeconfig.dev.json
+C:\Users\claud\source\repos\DemoProject\DemoProject\bin\Release\netcoreapp3.1\DemoProject.dll
+C:\Users\claud\source\repos\DemoProject\DemoProject\bin\Release\netcoreapp3.1\DemoProject.pdb
+C:\Users\claud\source\repos\DemoProject\DemoProject\obj\Release\netcoreapp3.1\DemoProject.AssemblyInfoInputs.cache
+C:\Users\claud\source\repos\DemoProject\DemoProject\obj\Release\netcoreapp3.1\DemoProject.AssemblyInfo.cs
+C:\Users\claud\source\repos\DemoProject\DemoProject\obj\Release\netcoreapp3.1\DemoProject.csproj.CoreCompileInputs.cache
+C:\Users\claud\source\repos\DemoProject\DemoProject\obj\Release\netcoreapp3.1\DemoProject.dll
+C:\Users\claud\source\repos\DemoProject\DemoProject\obj\Release\netcoreapp3.1\DemoProject.pdb
+C:\Users\claud\source\repos\DemoProject\DemoProject\obj\Release\netcoreapp3.1\DemoProject.genruntimeconfig.cache
