@@ -35,7 +35,6 @@ namespace TestNinja.UnitTests
 
             //Assert
             Assert.That(result, Is.EqualTo("Fizz"));
-
         }
 
         [Test]
@@ -46,7 +45,6 @@ namespace TestNinja.UnitTests
 
             //Assert
             Assert.That(result, Is.EqualTo("Buzz"));
-
         }
 
         public void GetOutput_ModuloFifferentFromZero_ReturnStrinNumber()
@@ -56,7 +54,6 @@ namespace TestNinja.UnitTests
 
             //Assert
             Assert.That(result, Is.EqualTo("1"));
-
         }
     }
 }

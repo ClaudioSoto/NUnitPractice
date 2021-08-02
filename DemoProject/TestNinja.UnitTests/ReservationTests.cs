@@ -12,7 +12,7 @@ namespace TestNinja.UnitTests
         }
 
         /*
-         * Los nombres de los test cases es NombreDeLaFuncion_Scenario_ExpectedBehavior
+         * The name of the test cases mus follow the structure: NameOfTheFunction_Scenario_ExpectedBehavior
          */
 
         [Test]

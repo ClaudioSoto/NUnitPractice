@@ -9,10 +9,10 @@ namespace TestNinja.UnitTests
     [TestFixture]
     class MathTests
     {
-        //creamos el objeto para no crearlo en cada test
+        //Create the object for the target class in order to avoid repeat the code
         private Math _math;
 
-        //con setup limpiamos o volvemos a crear el objeto antes de ejecutar cada test
+        //We use SetUp tag in order to execute the target method after every test
         [SetUp]
         public void SetUp()
         {
@@ -26,31 +26,31 @@ namespace TestNinja.UnitTests
             //Math math = new Math();
 
             //Act
-            //agregar valores simples para no confundir
+            //We add simple values in order to avoid confusion on especific values
             int result = _math.Add(1, 2);
 
             //Assert
             Assert.AreEqual(3, result);
         }
 
-        //CUANDO LOS TEST CASES SON IGUALES PERO CON PARAMETROS DIFERENTES
-        //SE DEBE DE PONER UN NOMBRE AL METHODO MAS GENERICO Y LA ETIQUETA [TestCase()] y parametros
+        /*
+         * When test cases return the same but with different parameters
+         * It's necessary to use a generic name in the method when [TestCase()] tag is used
+         */
         [Test]
         [TestCase(2,1,2)]
         [TestCase(1, 2, 2)]
         [TestCase(2, 2, 2)]
         public void Max_WhenCalled_ReturnTheGreaterArgument(int a, int b, int expected)
         {
-
             //Act
             int result = _math.Max(a, b);
 
             //Assert
             Assert.AreEqual(result, expected);
-
         }
 
-        //METODO PARA PROBAR ARREGLOS Y COLECCIONES
+        //Method to assert arrays and collections
         [Test]
         public void GetOddNumbers_LimitIsGreaterThanZero_ReturnOddNumbersUpToTheLimit()
         {
@@ -60,8 +60,5 @@ namespace TestNinja.UnitTests
             //Assert
             Assert.That(result, Is.EqualTo(new[] { 1, 3, 5 }));
         }
-
-
-
     }
 }

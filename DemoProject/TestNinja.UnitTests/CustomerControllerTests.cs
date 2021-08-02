@@ -10,7 +10,7 @@ namespace TestNinja.UnitTests
     class CustomerControllerTests
     {
 
-        //EJEMPLOS PARA TEST DE CLASES Y OBJETOS QUE SE REGRESAN
+        // Test examples when the assert needs to check or compare the return of an object of type
         [Test]
         public void GetCustomer_IdIsZero_ResultNotFound()
         {
@@ -26,7 +26,6 @@ namespace TestNinja.UnitTests
 
             //notFound object or derivatives
             //Assert.That(result, Is.InstanceOf<NotFound>());
-
         }
 
         [Test]
@@ -43,7 +42,5 @@ namespace TestNinja.UnitTests
             Assert.That(result, Is.TypeOf<Ok>());
 
         }
-
-
     }
 }

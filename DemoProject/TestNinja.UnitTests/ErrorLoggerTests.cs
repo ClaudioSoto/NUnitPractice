@@ -22,7 +22,7 @@ namespace TestNinja.UnitTests
             Assert.That(errorObj.LastError, Is.EqualTo("a"));
         }
 
-        //ejermplo para cuando se realizan excepciones
+        //When exeption is used you have to declare an annonymous function and use the Throws object to compare
         [Test]
         [TestCase(null)]
         [TestCase("")]
@@ -31,7 +31,6 @@ namespace TestNinja.UnitTests
         {
             //Arrange
             ErrorLogger errorObj = new ErrorLogger();
-
 
             //Act -Assert
             Assert.That(() => errorObj.Log(error), Throws.ArgumentNullException);

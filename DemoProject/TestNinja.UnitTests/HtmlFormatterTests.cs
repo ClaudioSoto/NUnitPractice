@@ -19,11 +19,10 @@ namespace TestNinja.UnitTests
             //Act 
             var result = formatter.FormatAsBold("abc");
 
-            //Assert
-            //solucion especifica
+            //Specific assert
             //Assert.AreEqual(result,"<strong>abc</strong>");
 
-            //solucion mas general
+            //General assert aproach
             Assert.That(result, Does.StartWith("<strong>").IgnoreCase);
             Assert.That(result, Does.EndWith("</strong>").IgnoreCase);
             Assert.That(result, Does.Contain("abc").IgnoreCase);

@@ -9,7 +9,7 @@ namespace TestNinja.UnitTests
     [TestFixture]
     class StackTestsEjercicio3
     {
-        //PUSH
+        //PUSH TESTS
         [Test]
         public void Push_IfObjectEqualToNull_ReturnArgumentNullException()
         {
@@ -24,10 +24,10 @@ namespace TestNinja.UnitTests
 
             stackObj.Push("a");
 
-            Assert.That(stackObj.Count,Is.EqualTo(1));
+            Assert.That(stackObj.Count, Is.EqualTo(1));
         }
 
-        //POP
+        //POP TESTS
         [Test]
         public void Pop_EmptyStack_InvalidOperationException()
         {
@@ -44,7 +44,7 @@ namespace TestNinja.UnitTests
             Assert.That(result, Is.EqualTo("a"));
         }
 
-        //PEAK
+        //PEAK TESTS
         [Test]
         public void Peek_EmptyStack_InvalidOperationException()
         {
