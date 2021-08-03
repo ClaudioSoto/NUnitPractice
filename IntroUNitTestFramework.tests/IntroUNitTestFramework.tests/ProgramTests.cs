@@ -10,6 +10,11 @@ namespace IntroUNitTestFramework.tests
     {
         private Program _program;
 
+        /*
+         * THIS TEST SUITE HAVE SEVERAL TEST CASES FOR IntroUNiTestFramework project
+         */
+
+        //METHOD FOR INITIALIZE THE OBJECT PROGRAM EVERY TIME A TEST IS FINISHED
         [SetUp]
         public void SetUp()
         {
@@ -17,7 +22,7 @@ namespace IntroUNitTestFramework.tests
         }
         
         /*
-         * TESTCASES PARA LOGIN
+         * TESTCASES FOR LOGIN 
          */
 
         [Test]
@@ -56,7 +61,7 @@ namespace IntroUNitTestFramework.tests
         }
 
         /*
-         * TESTCASES PARA GETDETAILS
+         * TESTCASES FOR GETDETAILS
          */
 
         [Test]
@@ -77,7 +82,7 @@ namespace IntroUNitTestFramework.tests
         }
 
         /*
-         * TESTCASES PARA ALLUSERS
+         * TESTCASES FOR ALLUSERS
          */
         [Test]
         public void AllUsers_CheckIfAttributesAreNotEmptyOrNull_ReturnList()
