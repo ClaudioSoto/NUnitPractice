@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroUNitTestFramework.tests", "IntroUNitTestFramework.tests\IntroUNitTestFramework.tests.csproj", "{B924CCB0-AB36-45C0-AF0C-28992101D05D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroUNitTestFramework", "..\IntroUNitTestFramework\IntroUNitTestFramework\IntroUNitTestFramework.csproj", "{B2DEF9E1-5CDB-43E0-8982-703BF0094D0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B924CCB0-AB36-45C0-AF0C-28992101D05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B924CCB0-AB36-45C0-AF0C-28992101D05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B924CCB0-AB36-45C0-AF0C-28992101D05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B924CCB0-AB36-45C0-AF0C-28992101D05D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2DEF9E1-5CDB-43E0-8982-703BF0094D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2DEF9E1-5CDB-43E0-8982-703BF0094D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2DEF9E1-5CDB-43E0-8982-703BF0094D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2DEF9E1-5CDB-43E0-8982-703BF0094D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E19EB9E-F57F-4AB7-B3D8-22390CEB3478}
+	EndGlobalSection
+EndGlobal

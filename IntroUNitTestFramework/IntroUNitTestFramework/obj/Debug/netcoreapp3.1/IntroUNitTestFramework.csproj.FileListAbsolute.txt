@@ -1,0 +1,13 @@
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\bin\Debug\netcoreapp3.1\IntroUNitTestFramework.exe
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\bin\Debug\netcoreapp3.1\IntroUNitTestFramework.deps.json
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\bin\Debug\netcoreapp3.1\IntroUNitTestFramework.runtimeconfig.json
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\bin\Debug\netcoreapp3.1\IntroUNitTestFramework.runtimeconfig.dev.json
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\bin\Debug\netcoreapp3.1\IntroUNitTestFramework.dll
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\bin\Debug\netcoreapp3.1\IntroUNitTestFramework.pdb
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\obj\Debug\netcoreapp3.1\IntroUNitTestFramework.csproj.AssemblyReference.cache
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\obj\Debug\netcoreapp3.1\IntroUNitTestFramework.AssemblyInfoInputs.cache
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\obj\Debug\netcoreapp3.1\IntroUNitTestFramework.AssemblyInfo.cs
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\obj\Debug\netcoreapp3.1\IntroUNitTestFramework.csproj.CoreCompileInputs.cache
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\obj\Debug\netcoreapp3.1\IntroUNitTestFramework.dll
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\obj\Debug\netcoreapp3.1\IntroUNitTestFramework.pdb
+C:\Users\claudio.sotoayala\source\repos\IntroUNitTestFramework\IntroUNitTestFramework\obj\Debug\netcoreapp3.1\IntroUNitTestFramework.genruntimeconfig.cache

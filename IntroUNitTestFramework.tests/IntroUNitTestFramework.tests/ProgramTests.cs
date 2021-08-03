@@ -1,0 +1,98 @@
+﻿using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace IntroUNitTestFramework.tests
+{
+    [TestFixture]
+    public class ProgramTests
+    {
+        private Program _program;
+
+        [SetUp]
+        public void SetUp()
+        {
+            _program = new Program();
+        }
+        
+        /*
+         * TESTCASES PARA LOGIN
+         */
+
+        [Test]
+        [TestCase("","")]
+        [TestCase("", "password")]
+        [TestCase("user", "")]
+        public void Login_UserOrPassEmpty_ReturnError(string user, string password)
+        {
+
+            //Arrange - Act
+            var result = _program.Login(user,password);
+    
+            //Assert
+            Assert.That(result, Is.EqualTo("Userid or password could not be Empty."));
+        }
+
+        [Test]
+        public void Login_UserOrPassAdmin_ReturnWelcomeAdmin()
+        {
+            //Arrange - Act
+            var result = _program.Login("Admin", "Admin");
+
+            //Assert
+            Assert.That(result, Is.EqualTo("Welcome Admin."));
+
+        }
+
+        [Test]
+        public void Login_UserAndPasswordNotEmptyNotAdmin_ReturnError()
+        {
+            //Arrange - Act
+            var result = _program.Login("user", "user");
+
+            //Assert
+            Assert.That(result, Is.EqualTo("Incorrect UserId or Password."));
+        }
+
+        /*
+         * TESTCASES PARA GETDETAILS
+         */
+
+        [Test]
+        public void GetDetails_UserExists_ReturnUserInfo()
+        {
+            //Arrange - Act
+            var result = _program.getDetails(100);
+
+            //Assert
+            foreach(var user in result)
+            {
+                Assert.That(user.id, Is.EqualTo(100));
+                Assert.That(user.Name, Is.EqualTo("Bharat"));
+                Assert.That(user.Geneder, Is.EqualTo("male"));
+                Assert.That(user.salary, Is.EqualTo(40000));
+            }
+
+        }
+
+        /*
+         * TESTCASES PARA ALLUSERS
+         */
+        [Test]
+        public void AllUsers_CheckIfAttributesAreNotEmptyOrNull_ReturnList()
+        {
+            //Arrange - Act
+            var result = _program.AllUsers();
+
+            //Assert
+            foreach(var user in result)
+            {
+                Assert.That(user.id, Is.Not.Null);
+                Assert.That(user.Name, Is.Not.Null);
+                Assert.That(user.salary, Is.Not.Null);
+                Assert.That(user.Geneder, Is.Not.Null);
+            }
+        }
+    }
+}
