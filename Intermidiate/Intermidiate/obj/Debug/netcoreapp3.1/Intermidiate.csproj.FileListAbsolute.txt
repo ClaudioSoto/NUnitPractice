@@ -1,0 +1,13 @@
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\bin\Debug\netcoreapp3.1\Intermidiate.exe
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\bin\Debug\netcoreapp3.1\Intermidiate.deps.json
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\bin\Debug\netcoreapp3.1\Intermidiate.runtimeconfig.json
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\bin\Debug\netcoreapp3.1\Intermidiate.runtimeconfig.dev.json
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\bin\Debug\netcoreapp3.1\Intermidiate.dll
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\bin\Debug\netcoreapp3.1\Intermidiate.pdb
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\obj\Debug\netcoreapp3.1\Intermidiate.AssemblyInfoInputs.cache
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\obj\Debug\netcoreapp3.1\Intermidiate.AssemblyInfo.cs
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\obj\Debug\netcoreapp3.1\Intermidiate.csproj.CoreCompileInputs.cache
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\obj\Debug\netcoreapp3.1\Intermidiate.dll
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\obj\Debug\netcoreapp3.1\Intermidiate.pdb
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\obj\Debug\netcoreapp3.1\Intermidiate.genruntimeconfig.cache
+C:\Users\claud\source\repos\Intermidiate\Intermidiate\obj\Debug\netcoreapp3.1\Intermidiate.csproj.AssemblyReference.cache

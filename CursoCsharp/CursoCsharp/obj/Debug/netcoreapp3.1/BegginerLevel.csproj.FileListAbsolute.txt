@@ -1,0 +1,13 @@
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\bin\Debug\netcoreapp3.1\BegginerLevel.exe
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\bin\Debug\netcoreapp3.1\BegginerLevel.deps.json
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\bin\Debug\netcoreapp3.1\BegginerLevel.runtimeconfig.json
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\bin\Debug\netcoreapp3.1\BegginerLevel.runtimeconfig.dev.json
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\bin\Debug\netcoreapp3.1\BegginerLevel.dll
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\bin\Debug\netcoreapp3.1\BegginerLevel.pdb
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\obj\Debug\netcoreapp3.1\BegginerLevel.csproj.AssemblyReference.cache
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\obj\Debug\netcoreapp3.1\BegginerLevel.AssemblyInfoInputs.cache
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\obj\Debug\netcoreapp3.1\BegginerLevel.AssemblyInfo.cs
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\obj\Debug\netcoreapp3.1\BegginerLevel.csproj.CoreCompileInputs.cache
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\obj\Debug\netcoreapp3.1\BegginerLevel.dll
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\obj\Debug\netcoreapp3.1\BegginerLevel.pdb
+C:\Users\claud\source\repos\CursoCsharp\CursoCsharp\obj\Debug\netcoreapp3.1\BegginerLevel.genruntimeconfig.cache

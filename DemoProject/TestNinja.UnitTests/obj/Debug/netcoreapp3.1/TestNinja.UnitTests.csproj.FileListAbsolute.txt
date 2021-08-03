@@ -100,3 +100,5 @@ C:\Users\claud\source\repos\DemoProject\TestNinja.UnitTests\obj\Debug\netcoreapp
 C:\Users\claud\source\repos\DemoProject\TestNinja.UnitTests\obj\Debug\netcoreapp3.1\TestNinja.UnitTests.dll
 C:\Users\claud\source\repos\DemoProject\TestNinja.UnitTests\obj\Debug\netcoreapp3.1\TestNinja.UnitTests.pdb
 C:\Users\claud\source\repos\DemoProject\TestNinja.UnitTests\obj\Debug\netcoreapp3.1\TestNinja.UnitTests.genruntimeconfig.cache
+C:\Users\claud\source\repos\DemoProject\TestNinja.UnitTests\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\claud\source\repos\DemoProject\TestNinja.UnitTests\bin\Debug\netcoreapp3.1\Moq.dll

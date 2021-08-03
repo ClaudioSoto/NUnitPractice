@@ -31,11 +31,7 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "C:\\Users\\claud\\source\\repos\\TestNinja\\TestNinja\\TestNinja.csproj": {
-                "projectPath": "C:\\Users\\claud\\source\\repos\\TestNinja\\TestNinja\\TestNinja.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -51,6 +47,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.10.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
             },
             "NUnit": {
               "target": "Package",
@@ -84,16 +84,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
-      }
-    },
-    "C:\\Users\\claud\\source\\repos\\TestNinja\\TestNinja\\TestNinja.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\claud\\source\\repos\\TestNinja\\TestNinja\\TestNinja.csproj",
-        "projectName": "TestNinja",
-        "projectPath": "C:\\Users\\claud\\source\\repos\\TestNinja\\TestNinja\\TestNinja.csproj"
-      },
-      "frameworks": {
-        "net45": {}
       }
     }
   }
