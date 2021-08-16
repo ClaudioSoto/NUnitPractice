@@ -81,6 +81,23 @@ namespace IntroUNitTestFramework.tests
 
         }
 
+        [Test]
+        public void GetDetails_NotUserCloned_ReturnSameLen()
+        {
+            //Arrange - Act
+            var result = _program.AllUsers();
+            HashSet<int> s = new HashSet<int>();
+
+            foreach(var idUser in result)
+            {
+                s.Add(idUser.id);
+            }
+
+            //Assert
+            Assert.That(result.Count, Is.EqualTo(s.Count));
+
+        }
+
         /*
          * TESTCASES FOR ALLUSERS
          */
@@ -98,6 +115,17 @@ namespace IntroUNitTestFramework.tests
                 Assert.That(user.salary, Is.Not.Null);
                 Assert.That(user.Geneder, Is.Not.Null);
             }
+        }
+
+        [Test]
+        public void AllUsers_NumberOfUsers_ReturnSeven()
+        {
+            //Arrange - Act
+            var result = _program.AllUsers().Count;
+
+            //Assert
+            Assert.That(result, Is.EqualTo(7));
+
         }
     }
 }

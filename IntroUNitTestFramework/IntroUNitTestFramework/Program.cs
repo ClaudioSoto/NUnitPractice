@@ -65,6 +65,13 @@ namespace IntroUNitTestFramework
                 Geneder = "male",
                 salary = 670000
             });
+            li.Add(new EmployeeDetails
+            {
+                id = 107,
+                Name = "Claudio",
+                Geneder = "male",
+                salary = 6700000
+            });
             return li;
         }
         public List<EmployeeDetails> getDetails(int id)
