@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Intermidiate
 {
-    class Hijo
+    public class Hijo
     {
+        //auto implemented properties 
+        public string nombre { get; set; }
+        public int edad { get; set; }
+        public string escuela { get; set; }
     }
 }

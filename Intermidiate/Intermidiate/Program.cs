@@ -28,6 +28,15 @@ namespace Intermidiate
             p.Trabajo = "sofia";
             Console.WriteLine(p.Trabajo);
 
+            //propiedades autoimplementadas 
+            Hijo hijo1 = new Hijo();
+            hijo1.nombre = "claudio soto";
+            hijo1.edad = 24;
+
+
+
+            Console.WriteLine("Nombre: {0}  Edad: {1}", hijo1.nombre, hijo1.edad);
+
             //herencia
             Automovil bmw = new Automovil("alamadre");
             bmw.Arrancar();
