@@ -20,7 +20,25 @@ namespace IntroUNitTestFramework.tests
         {
             _program = new Program();
         }
-        
+
+        //METHOD TEARDOWN FOR DISPOSE AN OBJECT AT THE END OF EVERY TEST
+        [TearDown]
+        public void TearDown()
+        {
+            _program = null;
+        }
+
+        /*
+         * EXAMPLE OF IGNORED TEST CASE
+         */
+        [Test]
+        [Ignore("Here you have to share the reason of ignoring the test case")]
+        public void any_testIgnoreCase_ReturnAnything()
+        {
+            Console.WriteLine("test case ignored");
+        }
+
+
         /*
          * TESTCASES FOR LOGIN 
          */
@@ -81,22 +99,6 @@ namespace IntroUNitTestFramework.tests
 
         }
 
-        [Test]
-        public void GetDetails_NotUserCloned_ReturnSameLen()
-        {
-            //Arrange - Act
-            var result = _program.AllUsers();
-            HashSet<int> s = new HashSet<int>();
-
-            foreach(var idUser in result)
-            {
-                s.Add(idUser.id);
-            }
-
-            //Assert
-            Assert.That(result.Count, Is.EqualTo(s.Count));
-
-        }
 
         /*
          * TESTCASES FOR ALLUSERS
@@ -127,5 +129,53 @@ namespace IntroUNitTestFramework.tests
             Assert.That(result, Is.EqualTo(7));
 
         }
+
+        [Test]
+        public void AllUsers_NotUserCloned_ReturnSameLen()
+        {
+            //Arrange - Act
+            var result = _program.AllUsers();
+            HashSet<int> s = new HashSet<int>();
+
+            foreach (var idUser in result)
+            {
+                s.Add(idUser.id);
+            }
+
+            //Assert
+            Assert.That(result.Count, Is.EqualTo(s.Count));
+        }
+
+        /*
+         * TESTCASES FOR FIZZBUZZ
+         */
+
+        [Test]
+        [TestCase(15)]
+        [TestCase(45)]
+        public void FizzBuzz_WhenNumberModuloIs3And5_ReturnFizzBuzz(int number)
+        {
+            //Arrange - Act
+            var result = _program.FizzBuzz(number);
+
+            //Assert
+            Assert.That(result, Is.EqualTo("FizzBuzz"));
+        }
+
+        [Test]
+        [TestCase("Fizz",3)]
+        [TestCase("Buzz",5)]
+        [TestCase("FizzBuzz",15)]
+        [TestCase("",1)]
+        public void FizzBuzz_WhenCalledReturnTestCaseResult(string expected, int number)
+        {
+            //Arrange - Act
+            var result = _program.FizzBuzz(number);
+
+            //Assert
+            Assert.That(result, Is.EqualTo(expected));
+        }
+
+
     }
 }
