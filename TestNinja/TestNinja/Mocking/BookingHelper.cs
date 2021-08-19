@@ -17,6 +17,7 @@ namespace TestNinja.Mocking
                     .Where(
                         b => b.Id != booking.Id && b.Status != "Cancelled");
 
+
             var overlappingBooking =
                 bookings.FirstOrDefault(
                     b =>

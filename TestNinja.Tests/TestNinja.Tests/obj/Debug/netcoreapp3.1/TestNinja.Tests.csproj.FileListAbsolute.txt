@@ -101,3 +101,5 @@ C:\Users\claudio.sotoayala\Desktop\Misc\NUnit\NUnitPractice\TestNinja.Tests\Test
 C:\Users\claudio.sotoayala\Desktop\Misc\NUnit\NUnitPractice\TestNinja.Tests\TestNinja.Tests\obj\Debug\netcoreapp3.1\TestNinja.Tests.dll
 C:\Users\claudio.sotoayala\Desktop\Misc\NUnit\NUnitPractice\TestNinja.Tests\TestNinja.Tests\obj\Debug\netcoreapp3.1\TestNinja.Tests.pdb
 C:\Users\claudio.sotoayala\Desktop\Misc\NUnit\NUnitPractice\TestNinja.Tests\TestNinja.Tests\obj\Debug\netcoreapp3.1\TestNinja.Tests.genruntimeconfig.cache
+C:\Users\claudio.sotoayala\Desktop\Misc\NUnit\NUnitPractice\TestNinja.Tests\TestNinja.Tests\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\claudio.sotoayala\Desktop\Misc\NUnit\NUnitPractice\TestNinja.Tests\TestNinja.Tests\bin\Debug\netcoreapp3.1\Moq.dll

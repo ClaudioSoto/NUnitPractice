@@ -9,31 +9,51 @@ namespace TestNinja.Mocking
 {
     public class VideoService
     {
-        public string ReadVideoTitle()
+
+        //INJECTION VIA METHOD
+        public string ReadVideoTitle(IFileReader fileReader)
         {
-            var str = File.ReadAllText("video.txt");
+            //var str = File.ReadAllText("video.txt");
+
+            //first way
+            var str = fileReader.Read("video.txt");
+
             var video = JsonConvert.DeserializeObject<Video>(str);
             if (video == null)
                 return "Error parsing the video.";
             return video.Title;
         }
 
-        public string GetUnprocessedVideosAsCsv()
+        public string GetUnprocessedVideosAsCsv(IVideoRepository videoRepository)
         {
             var videoIds = new List<int>();
-            
+
+            /* 
+                 * THIS GOES TO VIDEO REPOSITORY FILE BECAUSE IS AN EXTERNAL RESOURCE
             using (var context = new VideoContext())
             {
+                
                 var videos = 
                     (from video in context.Videos
                     where !video.IsProcessed
                     select video).ToList();
-                
-                foreach (var v in videos)
+            */
+
+            //REFACTOR AND CALL THE METHOD GetUnprocessedVideos AND 
+            //STORE INSIDE A VARIABLE videos TO MANTAIN THE FUNCTIONALITY
+
+            //var videos = new VideoRepository().GetUnprocessedVideos();
+
+            //BUT WITH THE METHOD INJECTION IS NOT NECESARRY TO CREATE NEW VIDEO REPOSITORY
+            //INSTANCE, SO YO USE THE INTERFACE OBJECT
+
+            var videos = videoRepository.GetUnprocessedVideos();
+
+            foreach (var v in videos)
                     videoIds.Add(v.Id);
 
                 return String.Join(",", videoIds);
-            }
+            //}
         }
     }
 
