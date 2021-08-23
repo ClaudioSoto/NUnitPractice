@@ -6,44 +6,20 @@ using System.Text;
 
 namespace TestNinja.Mocking
 {
-    public class HousekeeperHelper
+    public static class HousekeeperHelper
     {
         private static readonly UnitOfWork UnitOfWork = new UnitOfWork();
 
-        //EXTERNAL RESOURCES
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IStatementGenerator _statementGenerator;
-        private readonly IEmailSender _emailSender;
-        private readonly IXtraMessageBox _xtraMessageBox;
-
-
-        public HousekeeperHelper(IUnitOfWork unitOfWork, 
-            IStatementGenerator statementGenerator, 
-            IEmailSender emailSender,
-            IXtraMessageBox xtraMessageBox)
+        public static bool SendStatementEmails(DateTime statementDate)
         {
-            this._unitOfWork = unitOfWork;
-            this._statementGenerator = statementGenerator;
-            this._emailSender = emailSender;
-            this._xtraMessageBox = xtraMessageBox;
-        }
-
-        public void SendStatementEmails(DateTime statementDate)
-        {
-            //var housekeepers = UnitOfWork.Query<Housekeeper>();
-
-            //WE SUBSTITUTE FOR THE INTERFACE OBJECT FOR IUnitOfWork
-            var housekeepers = _unitOfWork.Query<Housekeeper>();
+            var housekeepers = UnitOfWork.Query<Housekeeper>();
 
             foreach (var housekeeper in housekeepers)
             {
-                if (string.IsNullOrWhiteSpace(housekeeper.Email))
+                if (housekeeper.Email == null)
                     continue;
 
-                //var statementFilename = SaveStatement(housekeeper.Oid, housekeeper.FullName, statementDate);
-
-                //WE SUBSTITE FOR THE INTERFACE OBJECT FOR STATEMENTGENERATOR
-                var statementFilename = _statementGenerator.SaveStatement(housekeeper.Oid, housekeeper.FullName, statementDate);
+                var statementFilename = SaveStatement(housekeeper.Oid, housekeeper.FullName, statementDate);
 
                 if (string.IsNullOrWhiteSpace(statementFilename))
                     continue;
@@ -53,27 +29,17 @@ namespace TestNinja.Mocking
 
                 try
                 {
-                    /*
                     EmailFile(emailAddress, emailBody, statementFilename,
-                        string.Format("Sandpiper Statement {0:yyyy-MM} {1}", statementDate, housekeeper.FullName));
-                    */
-
-                    //WE SUBSTITUTE FOR THE INTERFACE OBJECT FOR EMAILSENDER
-                    _emailSender.EmailFile(emailAddress, emailBody, statementFilename,
                         string.Format("Sandpiper Statement {0:yyyy-MM} {1}", statementDate, housekeeper.FullName));
                 }
                 catch (Exception e)
                 {
-                    /*
                     XtraMessageBox.Show(e.Message, string.Format("Email failure: {0}", emailAddress),
-                        MessageBoxButtons.OK);
-                    */
-
-                    //WE SUBSTITUTE FOR THE INTERFACE OBJECT FOR XTRAMESSAGEBOX
-                    _xtraMessageBox.Show(e.Message, string.Format("Email failure: {0}", emailAddress),
                         MessageBoxButtons.OK);
                 }
             }
+
+            return true;
         }
 
         private static string SaveStatement(int housekeeperOid, string housekeeperName, DateTime statementDate)
@@ -130,14 +96,9 @@ namespace TestNinja.Mocking
         OK
     }
 
-    public interface IXtraMessageBox
+    public class XtraMessageBox
     {
-        void Show(string s, string housekeeperStatements, MessageBoxButtons ok);
-    }
-
-    public class XtraMessageBox : IXtraMessageBox
-    {
-        public void Show(string s, string housekeeperStatements, MessageBoxButtons ok)
+        public static void Show(string s, string housekeeperStatements, MessageBoxButtons ok)
         {
         }
     }
