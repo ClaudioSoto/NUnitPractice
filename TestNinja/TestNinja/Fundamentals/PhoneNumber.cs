@@ -8,14 +8,14 @@ namespace TestNinja.Fundamentals
         public string Major { get; }
         public string Minor { get; }
 
-        private PhoneNumber(string area, string major, string minor)
+        public  PhoneNumber(string area, string major, string minor)
         {
             Area = area;
             Major = major;
             Minor = minor;
         }
         
-        public static PhoneNumber Parse(string number)
+        public PhoneNumber Parse(string number)
         {
             if (String.IsNullOrWhiteSpace(number))
                 throw new ArgumentException("Phone number cannot be blank.");
