@@ -13,7 +13,7 @@
         }
     }
 
-    public class Customer 
+    public class Customer
     {
         public bool IsGold { get; set; }
     }
